@@ -16,28 +16,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mls-JT-V7c">
-                                <rect key="frame" x="10" y="57" width="370" height="366.66666666666669"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66F-Hv-puh">
+                                <rect key="frame" x="157" y="602" width="76" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="dqA-5e-xdi"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="START"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zV3-Vk-By8"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oa0-8b-CJM" userLabel="Red">
+                                <rect key="frame" x="145" y="202" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="N4b-Ul-fUt"/>
+                                    <constraint firstAttribute="height" constant="100" id="tSF-uy-Es6"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MzJ-ge-ASV">
-                                <rect key="frame" x="10" y="433.66666666666674" width="370" height="366.33333333333326"/>
-                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJc-Pc-gdn" userLabel="Yellow">
+                                <rect key="frame" x="145" y="322" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="4FM-Hl-Pfp"/>
+                                    <constraint firstAttribute="width" constant="100" id="Ji4-4Q-CXw"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jmd-4z-oVb" userLabel="Green">
+                                <rect key="frame" x="145" y="442" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="aUH-Zk-QAU"/>
+                                    <constraint firstAttribute="width" constant="100" id="bhZ-GA-ySM"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mls-JT-V7c" secondAttribute="trailing" constant="10" id="Q6X-eq-tGn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MzJ-ge-ASV" secondAttribute="bottom" constant="10" id="Zed-Bt-w8b"/>
-                            <constraint firstItem="MzJ-ge-ASV" firstAttribute="top" secondItem="mls-JT-V7c" secondAttribute="bottom" constant="10" id="aBq-Zy-KVe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MzJ-ge-ASV" secondAttribute="trailing" constant="10" id="dLD-Wu-5Xl"/>
-                            <constraint firstItem="mls-JT-V7c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="jDo-fR-jsj"/>
-                            <constraint firstItem="mls-JT-V7c" firstAttribute="height" secondItem="MzJ-ge-ASV" secondAttribute="height" id="mRf-FI-a3N"/>
-                            <constraint firstItem="MzJ-ge-ASV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="x5b-ND-vsa"/>
-                            <constraint firstItem="mls-JT-V7c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="xV8-yh-bcY"/>
+                            <constraint firstItem="oa0-8b-CJM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="155" id="20f-8H-ZE6"/>
+                            <constraint firstItem="nJc-Pc-gdn" firstAttribute="top" secondItem="oa0-8b-CJM" secondAttribute="bottom" constant="20" id="4ST-mE-dgd"/>
+                            <constraint firstItem="66F-Hv-puh" firstAttribute="top" secondItem="Jmd-4z-oVb" secondAttribute="bottom" constant="60" id="H6I-4y-7H1"/>
+                            <constraint firstItem="66F-Hv-puh" firstAttribute="centerX" secondItem="nJc-Pc-gdn" secondAttribute="centerX" id="PXt-xc-aYt"/>
+                            <constraint firstItem="Jmd-4z-oVb" firstAttribute="top" secondItem="nJc-Pc-gdn" secondAttribute="bottom" constant="20" id="SS4-pF-Or7"/>
+                            <constraint firstItem="Jmd-4z-oVb" firstAttribute="leading" secondItem="nJc-Pc-gdn" secondAttribute="leading" id="ch7-hZ-XaI"/>
+                            <constraint firstItem="Jmd-4z-oVb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="442" id="eTG-ql-hd9"/>
+                            <constraint firstItem="Jmd-4z-oVb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="ghk-cj-RyJ"/>
+                            <constraint firstItem="66F-Hv-puh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="lXW-7V-hcb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="66F-Hv-puh" secondAttribute="bottom" constant="168" id="q36-2X-a8P"/>
+                            <constraint firstItem="66F-Hv-puh" firstAttribute="centerX" secondItem="Jmd-4z-oVb" secondAttribute="centerX" id="qXd-KD-hNL"/>
+                            <constraint firstItem="Jmd-4z-oVb" firstAttribute="leading" secondItem="oa0-8b-CJM" secondAttribute="leading" id="rDd-ts-KDN"/>
+                            <constraint firstAttribute="bottom" secondItem="oa0-8b-CJM" secondAttribute="bottom" constant="542" id="tRL-mx-qST"/>
+                            <constraint firstItem="66F-Hv-puh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vKR-vU-aSU"/>
+                            <constraint firstItem="66F-Hv-puh" firstAttribute="centerX" secondItem="oa0-8b-CJM" secondAttribute="centerX" id="wbL-9P-jlj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="66F-Hv-puh" id="xCK-rf-Dc3"/>
+                        <outlet property="greenView" destination="Jmd-4z-oVb" id="4JX-D4-LVe"/>
+                        <outlet property="redView" destination="oa0-8b-CJM" id="J4w-MI-6an"/>
+                        <outlet property="yellowView" destination="nJc-Pc-gdn" id="AYR-NW-fOV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -48,11 +88,14 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
