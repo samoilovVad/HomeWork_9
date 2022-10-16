@@ -17,9 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66F-Hv-puh">
-                                <rect key="frame" x="157" y="602" width="76" height="40"/>
+                                <rect key="frame" x="145" y="602" width="100" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="dqA-5e-xdi"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="e7Q-Wb-nwA"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="START"/>
@@ -55,21 +56,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="oa0-8b-CJM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="155" id="20f-8H-ZE6"/>
                             <constraint firstItem="nJc-Pc-gdn" firstAttribute="top" secondItem="oa0-8b-CJM" secondAttribute="bottom" constant="20" id="4ST-mE-dgd"/>
+                            <constraint firstItem="66F-Hv-puh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="200" id="9PD-yZ-o7O"/>
+                            <constraint firstItem="oa0-8b-CJM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AiW-La-HkY"/>
                             <constraint firstItem="66F-Hv-puh" firstAttribute="top" secondItem="Jmd-4z-oVb" secondAttribute="bottom" constant="60" id="H6I-4y-7H1"/>
-                            <constraint firstItem="66F-Hv-puh" firstAttribute="centerX" secondItem="nJc-Pc-gdn" secondAttribute="centerX" id="PXt-xc-aYt"/>
                             <constraint firstItem="Jmd-4z-oVb" firstAttribute="top" secondItem="nJc-Pc-gdn" secondAttribute="bottom" constant="20" id="SS4-pF-Or7"/>
-                            <constraint firstItem="Jmd-4z-oVb" firstAttribute="leading" secondItem="nJc-Pc-gdn" secondAttribute="leading" id="ch7-hZ-XaI"/>
-                            <constraint firstItem="Jmd-4z-oVb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="442" id="eTG-ql-hd9"/>
-                            <constraint firstItem="Jmd-4z-oVb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="ghk-cj-RyJ"/>
-                            <constraint firstItem="66F-Hv-puh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="lXW-7V-hcb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="66F-Hv-puh" secondAttribute="bottom" constant="168" id="q36-2X-a8P"/>
-                            <constraint firstItem="66F-Hv-puh" firstAttribute="centerX" secondItem="Jmd-4z-oVb" secondAttribute="centerX" id="qXd-KD-hNL"/>
-                            <constraint firstItem="Jmd-4z-oVb" firstAttribute="leading" secondItem="oa0-8b-CJM" secondAttribute="leading" id="rDd-ts-KDN"/>
-                            <constraint firstAttribute="bottom" secondItem="oa0-8b-CJM" secondAttribute="bottom" constant="542" id="tRL-mx-qST"/>
-                            <constraint firstItem="66F-Hv-puh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vKR-vU-aSU"/>
-                            <constraint firstItem="66F-Hv-puh" firstAttribute="centerX" secondItem="oa0-8b-CJM" secondAttribute="centerX" id="wbL-9P-jlj"/>
+                            <constraint firstItem="66F-Hv-puh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cyJ-ow-i2P"/>
+                            <constraint firstItem="nJc-Pc-gdn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="puM-dj-WZn"/>
+                            <constraint firstItem="Jmd-4z-oVb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sm1-vX-hLU"/>
                         </constraints>
                     </view>
                     <connections>

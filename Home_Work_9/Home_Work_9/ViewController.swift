@@ -21,10 +21,14 @@ class ViewController: UIViewController {
         greenView.layer.cornerRadius = 50
         yellowView.layer.cornerRadius = 50
         redView.layer.cornerRadius = 50
+        
+        greenView.backgroundColor = .green.withAlphaComponent(0.3)
+        yellowView.backgroundColor = .yellow.withAlphaComponent(0.3)
+        redView.backgroundColor = .red.withAlphaComponent(0.3)
     }
 
     @IBAction func buttonAction(_ sender: Any) {
-        button.setTitle("Next", for: .normal)
+        button.setTitle("NEXT", for: .normal)
         switch count {
         case 0 : first()
         case 1 : second()
@@ -32,7 +36,10 @@ class ViewController: UIViewController {
         case 3 : fourth()
         default : if count == 4 {
             count = 0
-            button.setTitle("Start", for: .normal)
+            button.setTitle("START", for: .normal)
+            greenView.backgroundColor = .green.withAlphaComponent(0.3)
+            yellowView.backgroundColor = .yellow.withAlphaComponent(0.3)
+            redView.backgroundColor = .red.withAlphaComponent(0.3)
         }
         }
     }
